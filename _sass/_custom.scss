@@ -234,7 +234,7 @@ aside.related-case-studies{
 			p{
 				a{
 					font-family:$heading-font;
-					letter-spacing: .1rem;
+					letter-spacing: .05em;
 					font-size:1.5rem;
 					color:$lightgrey;
 					display:block;
@@ -280,7 +280,7 @@ aside.related-case-studies{
 			border-bottom:1px solid $darker;
 			a{
 				font-family: $heading-font;
-				letter-spacing: .1rem;
+				letter-spacing: .05em;
 				background: $darker-transparent;
 		    	color: $tertiary;
 		    	font-size: 3em;
