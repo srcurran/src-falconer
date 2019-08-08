@@ -1,0 +1,18 @@
+<div class="grid">
+  {% for blok in blok.columns %}
+    {% include {{blok.component}}.html blok=blok %}
+  {% endfor %}
+</div>
+{% comment %}
+<div class="grid">
+  <ul>
+  {% for blok in blok.columns %}
+    <li>{{ blok.component }}</li>
+  {% endfor %}
+  </ul>
+</div>
+
+<div>
+  This is a <strong>{{blok.component}}</strong> and has those fields: {{blok}}
+</div>
+{% endcomment %}
