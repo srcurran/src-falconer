@@ -35,6 +35,8 @@ storyblok:
   token:   "sOfLrgprT36YITFgXuE0xQtt"
   # Can be either `draft` or `published`
   version: draft
+  token: "B4JhUPxIIUUECSaKWY79eAtt"
+  version: published
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
