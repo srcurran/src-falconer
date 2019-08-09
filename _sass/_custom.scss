@@ -17,16 +17,15 @@ nav{
 	flex-wrap:no-wrap;
 	justify-content:space-between;
 	align-items:center;
-	background:$light-transparent;
-	border-bottom:1px solid $dark-transparent;
+	background:$main-transparent;
 	.logo a{
 		font-weight: 700;
 		font-size: 1.5rem;
-		color:$darker;
+		color:$white;
 	}
 	.logo a:hover{
 		text-decoration:none;
-		color:$dark;
+		color:$white;
 	}
 	
 	.nav-list{
@@ -43,7 +42,7 @@ nav{
 				}	
 				a{ 
 					padding:1rem;
-					color: $dark;
+					color: $white;
 					&:hover{
 					}
 				}
