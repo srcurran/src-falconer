@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-      
-      {% for blok in page.story.content.body %}
-        {% include {{blok.component}}.html blok=blok %}
-      {% endfor %}
-      
-    {% include footer.html %}
-  </body>
+	{% include head.html %}
+	<body>
+		{% include header.html %} {% for blok in page.story.content.body %} {%
+		include {{blok.component}}.html blok=blok %} {% endfor %} {% include
+		footer.html %}
+	</body>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </html>

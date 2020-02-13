@@ -1,10 +1,15 @@
 <div class="case-studies">
 	<h2>Some Featured Works</h2>
-{% for page in site.pages %}
-	{% if page.url contains "/case-study/" %}	
-		<ul>
-			<li style="background-image:url('{{ page.story.content.background_image }}')"><a href="{{page.url}}">{{ page.title }}</a></li>
-		</ul>
-	{% endif %}
-{% endfor %}
+	<ul>
+		{% for page in site.pages %} {% if page.url contains "/case-study/" %}
+
+		<li
+			data-aos="fade-up"
+			style="background-image:url('{{ page.story.content.background_image }}')"
+		>
+			<a href="{{page.url}}">{{ page.title }}</a>
+		</li>
+
+		{% endif %} {% endfor %}
+	</ul>
 </div>
