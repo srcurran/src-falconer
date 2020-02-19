@@ -96,8 +96,13 @@ main.case-study {
 		background: $lightgrey;
 		.inset {
 			padding: 10rem;
+
+			@media only screen and (max-width: 600px) {
+				padding: 2rem;
+			}
 		}
 	}
+
 	div.solution {
 		display: flex;
 		justify-content: space-between;
@@ -156,6 +161,9 @@ main.case-study {
 		background: $main;
 		.inset {
 			padding: 10rem;
+			@media only screen and (max-width: 600px) {
+				padding: 2rem;
+			}
 		}
 		h2,
 		p {
@@ -176,6 +184,10 @@ main.case-study {
 		background: $lightgrey;
 		.inset {
 			padding: 10rem;
+
+			@media only screen and (max-width: 600px) {
+				padding: 2rem;
+			}
 		}
 	}
 }
