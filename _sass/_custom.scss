@@ -4,18 +4,28 @@ header {
 	background-size: cover;
 	background-position: center;
 	.wrapper {
-		background: $light-transparent;
-		padding: 15vh 2rem;
+		padding: 15vh 1rem;
+		border-bottom: 4px solid $main;
+		h1 {
+			background: $main-transparent;
+			padding: 2rem;
+			display: inline-flex;
+			color: $white;
+		}
 	}
 }
 
 main {
 	flex: 1 0 auto;
-	margin: 0 auto;
-	max-width: 1000px;
-	padding: 5rem 2rem 3rem;
+	.inset {
+		max-width: 1000px;
+		padding: 4rem 2rem;
+		margin: 0 auto;
+		&.bodycopy {
+			max-width: 800px;
+		}
+	}
 }
-
 main.homepage {
 	h1,
 	p {
@@ -50,10 +60,12 @@ main {
 main.case-study {
 	.project-overview {
 		display: flex;
+		align-items: center;
 		div.overview {
 			width: 60%;
 		}
 		div.meta {
+			box-shadow: 4px 4px 0px 0px $main;
 			width: 40%;
 			font-size: 0.85em;
 			margin: 5rem 0 4rem 4rem;
@@ -82,8 +94,9 @@ main.case-study {
 	}
 	div.challenge {
 		background: $lightgrey;
-		margin: 10rem -1000rem;
-		padding: 10rem 1010rem;
+		.inset {
+			padding: 10rem;
+		}
 	}
 	div.solution {
 		display: flex;
@@ -99,7 +112,7 @@ main.case-study {
 			overflow: hidden;
 			outline: 2px solid $main;
 			&:hover {
-				outline: 4px solid $main;
+				outline: 8px solid $main;
 			}
 			a {
 				img {
@@ -115,7 +128,7 @@ main.case-study {
 		justify-content: space-between;
 		align-items: center;
 
-		margin: 10rem auto;
+		margin: 4rem auto;
 		max-width: 800px;
 		.feature-copy {
 			width: 60%;
@@ -127,7 +140,7 @@ main.case-study {
 			overflow-y: hidden;
 			outline: 2px solid $main;
 			&:hover {
-				outline: 4px solid $main;
+				outline: 8px solid $main;
 			}
 			a {
 				img {
@@ -141,8 +154,9 @@ main.case-study {
 
 	div.final-design {
 		background: $main;
-		margin: 0 -1000rem;
-		padding: 10rem 1000rem;
+		.inset {
+			padding: 10rem;
+		}
 		h2,
 		p {
 			color: $white;
@@ -160,8 +174,9 @@ main.case-study {
 	}
 	div.my-role {
 		background: $lightgrey;
-		margin: 0 -1000rem;
-		padding: 5rem 1010rem;
+		.inset {
+			padding: 10rem;
+		}
 	}
 }
 
@@ -177,6 +192,8 @@ aside.related-case-studies {
 		div.related-case-study {
 			width: 50%;
 			background: $tertiary;
+
+			border: 8px solid $white;
 			margin: 2rem;
 			p {
 				a {
@@ -194,13 +211,15 @@ aside.related-case-studies {
 
 			&:hover {
 				background: $main;
+				border: 8px solid $main;
 			}
 		}
 		div.related-case-study:last-of-type {
 			background: $secondary;
-
+			border: 8px solid $white;
 			&:hover {
 				background: $main;
+				border: 8px solid $main;
 			}
 		}
 		div.related-case-study.left a::before {
@@ -227,13 +246,14 @@ aside.related-case-studies {
 		padding: 0;
 		display: block;
 		width: 100%;
+		border-top: 4px solid $secondary;
 		li {
-			background: $darker;
 			width: 100%;
 			list-style: none;
 			text-align: center;
 			background-size: cover;
 			background-position: center;
+			border-bottom: 4px solid $secondary;
 			a {
 				font-family: $heading-font;
 				letter-spacing: 0.05em;
@@ -246,7 +266,7 @@ aside.related-case-studies {
 			}
 			&:hover {
 				a {
-					background: $tertiary;
+					background: $main-transparent;
 					color: $white !important;
 				}
 			}
