@@ -1,20 +1,25 @@
+$heading-font: "Krona One", sans-serif;
 
-$heading-font: 'Abril Fatface', serif;
-$font-style: 'Lato', sans-serif;
+$font-style: "Lato", sans-serif;
 
-$main: #53B5B2;
-$secondary: #B55353; 
-$tertiary: #D2A928;
+// $main: #53b5b2;
+// $secondary: #b55353;
+// $tertiary: #d2a928;
+
+$main: #00f;
+$secondary: #00a;
+$tertiary: #00c;
 
 $white: #fff;
 $lightgrey: #f0f0f0;
 $dark: #444;
-$darker: #1D1415;
+$darker: #1d1415;
 
-$main-transparent: rgba(210,169,40,0.97);
-$light-transparent:	rgba(255,255,255,.9);
-$dark-transparent: rgba(0,0,0,.3);
-$darker-transparent: rgba(0,0,0,.6);
+// $main-transparent: rgba(210, 169, 40, 0.97);
+$main-transparent: rgba(0, 0, 200, 0.95);
+$light-transparent: rgba(255, 255, 255, 0.5);
+$dark-transparent: rgba(0, 0, 0, 0.3);
+$darker-transparent: rgba(0, 0, 0, 0.6);
 
 *,
 *::before,
@@ -38,14 +43,16 @@ h3 {
 	font-weight: 700;
 	color: $dark;
 	font-family: $heading-font;
-	letter-spacing:.05em;
+	letter-spacing: 0.05em;
 	line-height: 1.5;
-	margin: 2rem 0 .5rem;
+	margin: 2rem 0 0.5rem;
 }
-h4{margin:0}
-h5{
-	font-weight:400;
-	margin:0 0 -2rem;
+h4 {
+	margin: 0;
+}
+h5 {
+	font-weight: 400;
+	margin: 0 0 -2rem;
 }
 h1 {
 	color: $tertiary;
@@ -56,20 +63,133 @@ h1 {
 		color: $tertiary;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.25em;
+	}
+	h2 {
+		font-size: 1.75em;
+	}
+}
 h2 {
 	font-size: 1.5em;
+}
+
+nav a {
+	text-decoration: none;
 }
 
 a,
 a:visited {
 	color: $secondary;
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: 700;
 }
 a:hover {
 	color: $tertiary;
 	text-decoration: underline;
 }
-ul{
-	padding-left:1rem;
+ul {
+	padding-left: 1rem;
+}
+
+// Base styles nav/footer/etc
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	padding-top: 4.3rem;
+}
+nav {
+	height: 4.3rem;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 100;
+	padding: 1rem 5rem;
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: $main-transparent;
+	.logo a {
+		font-weight: 700;
+		font-size: 1.5rem;
+		color: $white;
+	}
+	.logo a:hover {
+		text-decoration: none;
+		color: $white;
+	}
+
+	.nav-list {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				&:hover {
+					ul {
+						display: block;
+					}
+				}
+				a {
+					padding: 1rem;
+					color: $white;
+					&:hover {
+					}
+				}
+				ul {
+					background: $white;
+
+					box-shadow: 0 0 2px 0 $dark-transparent;
+					padding: 1rem 1rem 1.5rem;
+					margin: 0.5rem -1rem 0;
+					position: absolute;
+					display: none;
+					li {
+						margin-left: 0;
+						display: block;
+						a {
+							display: inline-block;
+							width: 100%;
+							padding: 0.5rem 1rem !important;
+						}
+						a.sublink {
+							color: $main;
+						}
+						a.sublink:hover {
+							color: $tertiary;
+						}
+					}
+				}
+			}
+			li:last-of-type a {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+footer {
+	padding: 2rem;
+	background: $darker;
+	width: 100%;
+	clear: both;
+	p {
+		color: $lightgrey;
+		text-align: center;
+		a {
+			color: $lightgrey !important;
+		}
+	}
+}
+
+.text-center {
+	text-align: center;
 }

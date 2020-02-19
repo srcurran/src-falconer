@@ -3,16 +3,17 @@ nav-list:
     url: /
   - title: Case Studies
     subfolderitems:
-    - title: Starbucks
-      url: /case-study/starbucks/
-    - title: LegalShield
-      url: /case-study/legalshield/
-    - title: Yummly
-      url: /case-study/Yummly/
-    - title: AMA
-      url: /case-study/ama/
-    - title: Resource Furniture
-      url: /case-study/resource-furniture/
+      - title: Brotform
+        url: /case-study/brotform/
+      - title: Starbucks
+        url: /case-study/starbucks/
+      - title: LegalShield
+        url: /case-study/legalshield/
+      - title: Yummly
+        url: /case-study/Yummly/
+      - title: AMA
+        url: /case-study/ama/
+      - title: Resource Furniture
+        url: /case-study/resource-furniture/
   - title: About
     url: /about/
-      

@@ -19,25 +19,23 @@ description: >- # this means to ignore newlines until "baseurl:"
   Portfolio of User Experience/Product Designer Sean Curran
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: srcurran 
-github_username:  srcurran  
+twitter_username: srcurran
+github_username: srcurran
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-sass: 
+sass:
   sass_dir: _sass
 
 # Settings for your Storyblok space
 storyblok:
-  token:   "sOfLrgprT36YITFgXuE0xQtt"
-  # Can be either `draft` or `published`
+  token: "sOfLrgprT36YITFgXuE0xQtt"
   version: draft
-  token: "B4JhUPxIIUUECSaKWY79eAtt"
-  version: published
-
+  # token: "B4JhUPxIIUUECSaKWY79eAtt"
+  # version: published
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
