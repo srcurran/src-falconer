@@ -26,7 +26,9 @@ case_study_right_title: Next
 
 			<div class="challenge " data-aos="fade-up">
 				<div class="inset">
+					<hr />
 					{{ page.story.content.challenge | markdownify }}
+					<hr />
 				</div>
 			</div>
 
@@ -84,7 +86,11 @@ case_study_right_title: Next
 			</div>
 			{% endif %}
 			<div class="my-role" data-aos="fade-up">
-				<div class="inset">{{ page.story.content.my_role | markdownify }}</div>
+				<div class="inset">
+					<hr />
+					{{ page.story.content.my_role | markdownify }}
+					<hr />
+				</div>
 			</div>
 		</main>
 		<aside class="related-case-studies" data-aos="fade-up">

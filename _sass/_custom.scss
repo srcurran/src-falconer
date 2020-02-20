@@ -93,6 +93,10 @@ main.case-study {
 		}
 	}
 	div.challenge {
+		hr {
+			margin: 3rem 0;
+			border-bottom: 0.25rem solid $main;
+		}
 		background: $lightgrey;
 		.inset {
 			padding: 10rem;
@@ -185,6 +189,10 @@ main.case-study {
 		.inset {
 			padding: 10rem;
 
+			hr {
+				margin: 3rem 0;
+				border-bottom: 0.25rem solid $main;
+			}
 			@media only screen and (max-width: 600px) {
 				padding: 2rem;
 			}
@@ -363,9 +371,8 @@ footer {
 
 		div.challenge,
 		div.my-role {
-			padding: 5rem 2rem;
-			margin: 5rem -2rem;
-			margin: 5rem -2rem;
+			padding: 5rem 0rem;
+			margin: 5rem 0;
 			background: $lightgrey;
 		}
 		div.solution {

@@ -1,21 +1,24 @@
 <nav>
-		<div class="logo">
-			<a href="/">SEAN R CURRAN</a>
-		</div>
-		<div class="nav-list">
-			<ul>
-				{% for item in site.data.navigation.nav-list %}
-					
-						<li><a {% if item.url %} href="{{ item.url }}" {% endif %}>{{ item.title }}{% if item.subfolderitems %}&nbsp;+{%endif %}</a>
-					{% if item.subfolderitems %}
-						<ul>
-						{% for item in item.subfolderitems %}
-							<li><a class="sublink" href="{{ item.url }}">{{ item.title }}</a></li>
-						{% endfor %}
-						</ul>
-					{% endif %}
-					</li>
-				{% endfor %}
-			</ul>
-		</div>
+	<div class="logo">
+		<a href="/">Sean R. Curran</a>
+	</div>
+	<div class="nav-list">
+		<ul>
+			{% for item in site.data.navigation.nav-list %}
+
+			<li>
+				<a {% if item.url %} href="{{ item.url }}" {% endif %}
+					>{{ item.title }}{% if item.subfolderitems %}&nbsp;+{%endif %}</a
+				>
+				{% if item.subfolderitems %}
+				<ul>
+					{% for item in item.subfolderitems %}
+					<li><a class="sublink" href="{{ item.url }}">{{ item.title }}</a></li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 </nav>
