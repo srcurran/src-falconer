@@ -1,6 +1,6 @@
 $heading-font: "Krona One", sans-serif;
 
-$font-style: "Nunito", sans-serif;
+$font-style: "Nunito Sans", sans-serif;
 
 // $main: #53b5b2;
 // $secondary: #b55353;
@@ -39,7 +39,8 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-weight: 700;
 	color: $dark;
 	font-family: $heading-font;
@@ -48,7 +49,7 @@ h3 {
 	margin: 2rem 0 0.5rem;
 }
 h4 {
-	margin: 0;
+	font-size: 1rem;
 }
 h5 {
 	font-weight: 400;
@@ -73,6 +74,7 @@ h1 {
 	}
 }
 h2 {
+	margin-top: 3rem;
 	font-size: 1.5em;
 }
 
@@ -144,8 +146,6 @@ nav {
 				a {
 					padding: 1rem;
 					color: $white;
-					&:hover {
-					}
 				}
 
 				ul {
