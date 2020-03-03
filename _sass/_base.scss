@@ -10,8 +10,8 @@ $main: #00f;
 $secondary: #00a;
 $tertiary: #00c;
 
-$white: #fff;
-$lightgrey: #f0f0f0;
+$white: #fffdf8;
+$lightgrey: #f8f7f3;
 $dark: #444;
 $darker: #1d1415;
 
@@ -30,6 +30,7 @@ $darker-transparent: rgba(0, 0, 0, 0.6);
 }
 
 body {
+	background-color: $white;
 	margin: 0;
 	color: $dark;
 	font-family: $font-style;
