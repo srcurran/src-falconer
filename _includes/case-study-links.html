@@ -5,10 +5,14 @@
 
 		<li
 			data-aos="fade-up"
-			data-aos-duration="1000"
 			style="background-image:url('{{ page.story.content.background_image }}')"
 		>
-			<a href="{{page.url}}">{{ page.title }}</a>
+			<a href="{{page.url}}">
+				<h2>{{ page.title }}</h2>
+				<p>
+					{{ page.story.content.snippet }}
+				</p>
+			</a>
 		</li>
 
 		{% endif %} {% endfor %}

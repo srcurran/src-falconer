@@ -277,22 +277,35 @@ aside.related-case-studies {
 			border-bottom: 4px solid $secondary;
 			a {
 				font-family: $heading-font;
-				letter-spacing: 0.05em;
-				background: $light-transparent;
-				color: $tertiary;
-				font-size: 3rem;
-				font-weight: 800;
-				display: block;
 				padding: 8vh 0;
-
-				@media only screen and (max-width: 600px) {
-					font-size: 2.25rem;
+				display: block;
+				background: $light-transparent;
+				text-decoration: none;
+				h2 {
+					color: $tertiary;
+					text-decoration: underline;
+					font-size: 3rem;
+					letter-spacing: 0.05em;
+					padding-bottom: 0;
+					@media only screen and (max-width: 600px) {
+						font-size: 2.25rem;
+					}
 				}
-			}
-			&:hover {
-				a {
+				p {
+					color: $tertiary;
+					font-size: 1.75rem;
+					max-width: 75vw;
+					margin: 0 auto;
+				}
+				&:hover {
 					background: $main-transparent;
-					color: $white !important;
+
+					text-decoration: none;
+					h2,
+					p {
+						color: $white;
+						text-decoration: none;
+					}
 				}
 			}
 		}
