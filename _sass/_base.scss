@@ -61,7 +61,7 @@ p.xl {
 }
 h1 {
 	color: $tertiary;
-	font-size: 4em;
+	font-size: 3.75em;
 	a,
 	a:visited {
 		text-decoration: none;
@@ -88,12 +88,12 @@ nav a {
 
 a,
 a:visited {
-	color: $secondary;
+	color: $tertiary;
 	text-decoration: underline;
 	font-weight: 700;
 }
 a:hover {
-	color: $tertiary;
+	color: $secondary;
 	text-decoration: underline;
 }
 ul {
