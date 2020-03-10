@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2228px" height="678px" viewBox="0 0 2228 678" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.709596053%" y1="45.3704231%" x2="21.8098454%" y2="52.4316552%" id="linearGradient-1">
+
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" style="mix-blend-mode: color;" transform="translate(-0.000000, 0.000000)">
+            <path d="M0,-1.36424205e-12 L2227,-1.36424205e-12 C1345.50432,51.8890425 867.499037,201.613491 792.984143,449.173345 C718.469248,696.733199 454.141201,743.11592 0,588.321509 L0,-1.36424205e-12 Z" id="Rectangle-Copy-3" fill="url(#linearGradient-1)" style="mix-blend-mode: color-burn;"></path>
+            <path d="M1.8189894e-12,0 L2227.01904,0 C1988.92443,302.033782 1711.57487,473.761916 1394.97038,515.1844 C1146.91453,547.638424 681.924406,501.91029 1.8189894e-12,378 L1.8189894e-12,0 Z" id="Rectangle-Copy" fill="url(#linearGradient-2)" style="mix-blend-mode: color-burn;" transform="translate(1113.509520, 262.644169) scale(-1, 1) translate(-1113.509520, -262.644169) "></path>
+        </g>
+    </g>
+</svg>

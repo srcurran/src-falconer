@@ -2,18 +2,16 @@ $heading-font: "Krona One", sans-serif;
 
 $font-style: "Nunito Sans", sans-serif;
 
-$main: #00c;
-$main-dark: #0c0c65;
+$main: #4d87c6;
+$main-dark: #396594;
+$main-light: #a6c3e2;
 
-$white: #f7f7fd;
-$lightgrey: #e6e6fa;
-$dark: #0c0c65;
-$darker: #060633;
+$white: #f8faff;
+$lightgrey: #d2e0f0;
 
-$main-transparent: rgba(0, 0, 204, 0.9);
-$light-transparent: rgba(220, 220, 252, 0.9);
-$dark-transparent: rgba(0, 0, 0, 0.3);
-$darker-transparent: rgba(0, 0, 0, 0.6);
+$main-transparent: rgba(71, 135, 198, 0.9);
+$dark-transparent: rgba(57, 101, 148, 0.9);
+$light-transparent: rgba(245, 248, 252, 0.9);
 
 *,
 *::before,
@@ -26,7 +24,7 @@ $darker-transparent: rgba(0, 0, 0, 0.6);
 body {
 	background-color: $white;
 	margin: 0;
-	color: $dark;
+	color: $main-dark;
 	font-family: $font-style;
 	font-size: 1.1em;
 	line-height: 1.8;
@@ -37,7 +35,7 @@ h2,
 h3,
 h4 {
 	font-weight: 700;
-	color: $dark;
+	color: $main-dark;
 	font-family: $heading-font;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
@@ -127,7 +125,7 @@ nav {
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: $main-transparent;
+	background: $main-dark;
 	.logo a {
 		font-family: $heading-font;
 		font-weight: 700;
@@ -203,7 +201,7 @@ nav {
 
 footer {
 	padding: 2rem;
-	background: $darker;
+	background: $main-dark;
 	width: 100%;
 	clear: both;
 	p {

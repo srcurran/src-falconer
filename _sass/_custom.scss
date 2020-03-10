@@ -1,3 +1,11 @@
+body.text-page {
+	background: url("/assets/background-v7.svg");
+	background-position-x: 0;
+	background-position-y: 0%;
+	background-size: cover;
+
+	background-repeat: repeat-x;
+}
 header {
 	background: $white;
 	text-align: center;
@@ -7,7 +15,7 @@ header {
 		padding: 15vh 1rem;
 		border-bottom: 4px solid $main;
 		h1 {
-			background: $main-transparent;
+			background: $dark-transparent;
 			padding: 2rem;
 			display: inline-flex;
 			color: $white;
@@ -66,7 +74,6 @@ main.case-study {
 			width: 65%;
 		}
 		div.quicksheet {
-			border: 4px solid $main;
 			width: 35%;
 			font-size: 0.85em;
 			margin: 5rem 0 4rem 4rem;
@@ -268,7 +275,7 @@ aside.related-case-studies {
 		//max-width: 1000px;
 		margin: 0 auto;
 		padding: 2rem;
-		background: $dark;
+		background: $main-dark;
 		color: $white;
 		text-align: center;
 	}
@@ -337,7 +344,7 @@ aside.related-case-studies {
 
 footer {
 	padding: 2rem;
-	background: $darker;
+	background: $main-dark;
 	width: 100%;
 	clear: both;
 	p {
