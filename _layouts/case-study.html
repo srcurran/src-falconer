@@ -19,23 +19,19 @@ case_study_right_title: Next
 				<div class="overview" data-aos="fade-up">
 					{{ page.story.content.overview | markdownify }}
 				</div>
-				<div class="meta" data-aos="fade-up" data-aos-delay="100">
+				<div class="quicksheet" data-aos="fade-up" data-aos-delay="100">
+					<h4>Quicksheet</h4>
 					{{ page.story.content.project_quicksheet | markdownify }}
 				</div>
 			</div>
 
 			<div class="challenge " data-aos="fade-up">
 				<div class="inset">
-					<hr />
 					{{ page.story.content.challenge | markdownify }}
-					<hr />
 				</div>
 			</div>
 
 			<div class="solution inset" data-aos="fade-up">
-				<div class="solution-copy">
-					{{ page.story.content.solution | markdownify }}
-				</div>
 				<div class="solution-image">
 					<a data-lity href="{{ page.story.content.solution_image }}"
 						><img
@@ -43,21 +39,12 @@ case_study_right_title: Next
 							alt="{{ page.story.content.solution_image }}"
 					/></a>
 				</div>
+				<div class="solution-copy">
+					{{ page.story.content.solution | markdownify }}
+				</div>
 			</div>
 			{% for blok in page.story.content.feature_set %}
 			<div class="feature inset" data-aos="fade-up">
-				{% assign remainder = forloop.index0 | modulo: 2 %} {% if remainder == 0
-				%}
-				<div class="feature-image" data-aos="fade-up" data-aos-delay="100">
-					<a data-lity href="{{ blok.image }}"
-						><img src="{{ blok.image }}" alt="{{ blok.image }}"
-					/></a>
-				</div>
-				<div class="feature-copy" data-aos="fade-up">
-					<h5>Feature:</h5>
-					{{ blok.copy | markdownify }}
-				</div>
-				{% else %}
 				<div class="feature-copy" data-aos="fade-up">
 					<h5>Feature:</h5>
 					{{ blok.copy | markdownify }}
@@ -67,7 +54,6 @@ case_study_right_title: Next
 						><img src="{{ blok.image }}" alt="{{ blok.image }}"
 					/></a>
 				</div>
-				{% endif %}
 			</div>
 			{% endfor %} {% if page.story.content.final_design != "" %}
 			<div class="final-design" data-aos="fade-up">
@@ -94,7 +80,7 @@ case_study_right_title: Next
 			</div>
 		</main>
 		<aside class="related-case-studies" data-aos="fade-up">
-			<h2>Related Case Studies</h2>
+			<h2>Even More Case Studies</h2>
 			<div class="inner">
 				<div class="related-case-study left">
 					{{ page.story.content.related_case_study_left | markdownify }}

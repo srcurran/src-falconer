@@ -61,31 +61,38 @@ main.case-study {
 	.project-overview {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		div.overview {
-			width: 60%;
+			width: 65%;
 		}
-		div.meta {
-			// box-shadow: 4px 4px 0px 0px $main;
+		div.quicksheet {
 			border: 4px solid $main;
-			width: 40%;
+			width: 35%;
 			font-size: 0.85em;
 			margin: 5rem 0 4rem 4rem;
-			dl {
+			h4 {
+				margin: 0;
 				padding: 1rem;
+				background: $main;
+				color: $white;
+			}
+			dl {
+				padding: 1rem 1rem 2rem;
 				background: $lightgrey;
 				margin: 0;
-				display: flex;
-				flex-wrap: wrap;
-				dt {
+				dt::before {
+					content: "\A";
+					white-space: pre-wrap;
 					display: block;
-					width: 30%;
-					margin-bottom: 1rem;
+					height: 1rem;
+				}
+				dt {
+					display: inline;
 					font-weight: 800;
 				}
 				dd {
-					margin-inline-start: 0;
-					display: block;
-					width: 70%;
+					margin-inline-start: 0.5rem;
+					display: inline;
 					a {
 						text-decoration: none;
 					}
@@ -94,11 +101,11 @@ main.case-study {
 		}
 	}
 	div.challenge {
-		hr {
-			margin: 3rem 0;
-			border-bottom: 0.25rem solid $main;
+		background: $main !important;
+		color: $white;
+		h2 {
+			color: $white;
 		}
-		background: $lightgrey;
 		.inset {
 			padding: 10rem;
 
@@ -109,16 +116,16 @@ main.case-study {
 	}
 
 	div.solution {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
 		.solution-copy {
-			width: 55%;
+			width: 100%;
 			padding: 1rem 2rem;
 		}
 		.solution-image {
-			margin-top: 1rem;
-			width: 40%;
+			margin-top: 4rem;
+			width: 100%;
 			overflow: hidden;
 			outline: 2px solid $main;
 			&:hover {
@@ -134,18 +141,24 @@ main.case-study {
 		}
 	}
 	div.feature {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: center;
 
 		margin: 4rem auto;
-		max-width: 800px;
+		max-width: 1000px;
 		.feature-copy {
-			width: 60%;
+			width: 100%;
 			padding: 1rem 2rem;
+			p {
+				width: 80%;
+				@media only screen and (max-width: 600px) {
+					width: 100%;
+				}
+			}
 		}
 		.feature-image {
-			width: 35%;
+			width: 100%;
 			max-height: 25rem;
 			overflow-y: hidden;
 			outline: 2px solid $main;
@@ -153,6 +166,7 @@ main.case-study {
 				outline: 8px solid $main;
 			}
 			a {
+				background: $main-transparent;
 				img {
 					display: block;
 					margin: 0;
@@ -163,9 +177,9 @@ main.case-study {
 	}
 
 	div.final-design {
+		margin: 6rem 0 0;
 		background: $main;
 		.inset {
-			padding: 10rem;
 			@media only screen and (max-width: 600px) {
 				padding: 2rem;
 			}
@@ -192,6 +206,7 @@ main.case-study {
 
 			hr {
 				margin: 3rem 0;
+
 				border-bottom: 0.25rem solid $main;
 			}
 			@media only screen and (max-width: 600px) {
@@ -212,7 +227,7 @@ aside.related-case-studies {
 		justify-content: space-between;
 		div.related-case-study {
 			width: 50%;
-			background: $tertiary;
+			background: $main;
 
 			border: 8px solid $white;
 			margin: 2rem;
@@ -231,16 +246,8 @@ aside.related-case-studies {
 			}
 
 			&:hover {
-				background: $main;
-				border: 8px solid $main;
-			}
-		}
-		div.related-case-study:last-of-type {
-			background: $secondary;
-			border: 8px solid $white;
-			&:hover {
-				background: $main;
-				border: 8px solid $main;
+				background: $main-dark;
+				border: 8px solid $main-dark;
 			}
 		}
 		div.related-case-study.left a::before {
@@ -257,24 +264,26 @@ aside.related-case-studies {
 	max-width: 100%;
 	padding: 0;
 	margin: 0;
-	h2 {
-		max-width: 1000px;
+	> h2 {
+		//max-width: 1000px;
 		margin: 0 auto;
 		padding: 2rem;
+		background: $dark;
+		color: $white;
+		text-align: center;
 	}
 	ul {
 		margin: 0;
 		padding: 0;
 		display: block;
 		width: 100%;
-		border-top: 4px solid $secondary;
 		li {
 			width: 100%;
 			list-style: none;
 			text-align: center;
 			background-size: cover;
 			background-position: center;
-			border-bottom: 4px solid $secondary;
+			border-bottom: 4px solid $main;
 			a {
 				font-family: $heading-font;
 				padding: 8vh 0;
@@ -282,7 +291,7 @@ aside.related-case-studies {
 				background: $light-transparent;
 				text-decoration: none;
 				h2 {
-					color: $tertiary;
+					color: $main;
 					text-decoration: underline;
 					font-size: 3rem;
 					letter-spacing: 0.05em;
@@ -292,7 +301,7 @@ aside.related-case-studies {
 					}
 				}
 				p {
-					color: $tertiary;
+					color: $main;
 					font-size: 1.75rem;
 					max-width: 75vw;
 					margin: 0 auto;

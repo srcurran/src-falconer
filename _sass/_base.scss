@@ -2,22 +2,16 @@ $heading-font: "Krona One", sans-serif;
 
 $font-style: "Nunito Sans", sans-serif;
 
-// $main: #53b5b2;
-// $secondary: #b55353;
-// $tertiary: #d2a928;
+$main: #00c;
+$main-dark: #0c0c65;
 
-$main: #00f;
-$secondary: #00a;
-$tertiary: #00c;
+$white: #f7f7fd;
+$lightgrey: #e6e6fa;
+$dark: #0c0c65;
+$darker: #060633;
 
-$white: #fffdf8;
-$lightgrey: #f8f7f3;
-$dark: #444;
-$darker: #1d1415;
-
-// $main-transparent: rgba(210, 169, 40, 0.97);
-$main-transparent: rgba(0, 0, 200, 0.9);
-$light-transparent: rgba(255, 255, 255, 0.75);
+$main-transparent: rgba(0, 0, 204, 0.9);
+$light-transparent: rgba(220, 220, 252, 0.9);
 $dark-transparent: rgba(0, 0, 0, 0.3);
 $darker-transparent: rgba(0, 0, 0, 0.6);
 
@@ -47,28 +41,39 @@ h4 {
 	font-family: $heading-font;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
-	margin: 2rem 0 0.5rem;
+	margin: 2.5rem 0 0.5rem;
+}
+h1 {
+	color: $main;
+	font-size: 5em;
+	a,
+	a:visited {
+		text-decoration: none;
+		color: $main;
+	}
+}
+h2 {
+	margin-top: 3rem;
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 1.75rem;
+	text-transform: uppercase;
 }
 h4 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 h5 {
+	font-size: 1.25rem;
 	font-weight: 400;
 	margin: 0 0 -2rem;
+}
+p {
+	font-size: 1.25rem;
 }
 p.xl {
 	font-size: 1.5rem;
 }
-h1 {
-	color: $tertiary;
-	font-size: 3.75em;
-	a,
-	a:visited {
-		text-decoration: none;
-		color: $tertiary;
-	}
-}
-
 @media only screen and (max-width: 600px) {
 	h1 {
 		font-size: 2.25em;
@@ -77,10 +82,6 @@ h1 {
 		font-size: 1.75em;
 	}
 }
-h2 {
-	margin-top: 3rem;
-	font-size: 1.5em;
-}
 
 nav a {
 	text-decoration: none;
@@ -88,16 +89,21 @@ nav a {
 
 a,
 a:visited {
-	color: $tertiary;
+	color: $main;
 	text-decoration: underline;
 	font-weight: 700;
 }
 a:hover {
-	color: $secondary;
+	color: $main;
 	text-decoration: underline;
 }
 ul {
 	padding-left: 1rem;
+}
+
+hr {
+	margin: 2rem;
+	border: none;
 }
 
 // Base styles nav/footer/etc
@@ -172,7 +178,7 @@ nav {
 							color: $main;
 						}
 						a.sublink:hover {
-							color: $tertiary;
+							color: $main;
 						}
 					}
 				}
