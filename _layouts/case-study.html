@@ -16,10 +16,10 @@ case_study_right_title: Next
 		</header>
 		<main class="case-study">
 			<div class="project-overview inset">
-				<div class="overview" data-aos="fade-up">
+				<div class="overview" data-aos="fade-up-right">
 					{{ page.story.content.overview | markdownify }}
 				</div>
-				<div class="quicksheet" data-aos="fade-up" data-aos-delay="100">
+				<div class="quicksheet" data-aos="fade-up-left" data-aos-delay="100">
 					<h4>Quicksheet</h4>
 					{{ page.story.content.project_quicksheet | markdownify }}
 				</div>
@@ -45,7 +45,7 @@ case_study_right_title: Next
 			</div>
 			{% for blok in page.story.content.feature_set %}
 			<div class="feature inset" data-aos="fade-up">
-				<div class="feature-copy" data-aos="fade-up">
+				<div class="feature-copy">
 					<h5>Feature:</h5>
 					{{ blok.copy | markdownify }}
 				</div>
@@ -71,7 +71,7 @@ case_study_right_title: Next
 				</div>
 			</div>
 			{% endif %}
-			<div class="my-role" data-aos="fade-up">
+			<div class="my-role">
 				<div class="inset">
 					<hr />
 					{{ page.story.content.my_role | markdownify }}
@@ -79,13 +79,17 @@ case_study_right_title: Next
 				</div>
 			</div>
 		</main>
-		<aside class="related-case-studies" data-aos="fade-up">
-			<h2>Even More Case Studies</h2>
+		<aside class="related-case-studies">
+			<h2 data-aos="fade-up">Even More Case Studies</h2>
 			<div class="inner">
-				<div class="related-case-study left">
+				<div class="related-case-study left" data-aos="fade-up-right">
 					{{ page.story.content.related_case_study_left | markdownify }}
 				</div>
-				<div class="related-case-study right" data-aos-delay="100">
+				<div
+					class="related-case-study right"
+					data-aos="fade-up-left"
+					data-aos-delay="100"
+				>
 					{{ page.story.content.related_case_study_right | markdownify }}
 				</div>
 			</div>
@@ -95,6 +99,8 @@ case_study_right_title: Next
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		AOS.init({
+			duration: 200
+		});
 	</script>
 </html>
