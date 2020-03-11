@@ -6,7 +6,6 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop-HD">
             <g id="Group" transform="translate(0.000000, -0.000000)">
-                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="1440" height="707"></rect>
                 <polygon id="Rectangle-Copy" fill="#E3ECF6" points="156 1.42108547e-14 312 1.42108547e-14 287.409179 219.497163 131.403881 146.11396"></polygon>
                 <polygon id="Rectangle-Copy-2" fill="#E3ECF6" transform="translate(433.000000, 98.500596) scale(-1, 1) translate(-433.000000, -98.500596) " points="344.958962 1.42108547e-14 554 1.42108547e-14 497.691853 197.001193 312 146.75"></polygon>
                 <polygon id="Rectangle-Copy-7" fill="#E3ECF6" transform="translate(1256.814631, 83.868684) scale(-1, 1) translate(-1256.814631, -83.868684) " points="1220.22935 1.42108547e-14 1342.79132 1.42108547e-14 1269.00484 146.11396 1170.83794 167.737368"></polygon>
@@ -30,6 +29,7 @@
                 <polygon id="Rectangle-Copy-13" fill="#E3ECF6" points="554 146.75 652.066797 181.383065 731.524835 271.794673 504.148402 241.324759"></polygon>
                 <polygon id="Rectangle-Copy-15" fill="#E3ECF6" points="912.025759 181.383065 1075.12741 246 1075.12741 271.794673 884.881736 232.756497"></polygon>
                 <polygon id="Rectangle-Copy-19" fill="#E3ECF6" transform="translate(1381.664662, 247.412742) scale(-1, 1) translate(-1381.664662, -247.412742) " points="1323.32932 246 1420.538 167.737368 1440 218.733878 1323.32932 327.088115"></polygon>
+                <rect id="Rectangle" fill="#FFFFFF" opacity="0.2" style="mix-blend-mode: lighten;" x="0" y="0" width="1440" height="707"></rect>
             </g>
         </g>
     </g>

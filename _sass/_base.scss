@@ -127,12 +127,8 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	padding-top: 4.3rem;
 }
 nav {
-	height: 4.3rem;
-	position: fixed;
-	top: 0;
 	width: 100vw;
 	z-index: 100;
 	padding: 1rem 5rem;

@@ -1,5 +1,5 @@
 body.text-page {
-	background: url("/assets/background-v7.svg");
+	background: url("/assets/background-v8.svg");
 	background-position-x: 0;
 	background-position-y: 0%;
 	background-size: cover;
@@ -127,12 +127,12 @@ main.case-study {
 		// justify-content: space-between;
 		// align-items: center;
 		.solution-copy {
-			// width: 100%;
+			width: 100%;
 			padding: 1rem 2rem;
 		}
 		.solution-image {
 			margin-top: 4rem;
-			// width: 100%;
+			width: 100%;
 			overflow: hidden;
 			outline: 2px solid $main;
 			&:hover {
@@ -142,7 +142,7 @@ main.case-study {
 				img {
 					display: block;
 					margin: 0;
-					// width: 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -155,17 +155,17 @@ main.case-study {
 		margin: 4rem auto;
 		max-width: 1000px;
 		.feature-copy {
-			// width: 100%;
+			width: 100%;
 			padding: 1rem 2rem;
 			p {
 				width: 80%;
 				@media only screen and (max-width: 600px) {
-					// width: 100%;
+					width: 100%;
 				}
 			}
 		}
 		.feature-image {
-			// width: 100%;
+			width: 100%;
 			max-height: 25rem;
 			overflow-y: hidden;
 			outline: 2px solid $main;
@@ -177,7 +177,7 @@ main.case-study {
 				img {
 					display: block;
 					margin: 0;
-					// width: 100%;
+					width: 100%;
 				}
 			}
 		}
@@ -193,12 +193,13 @@ main.case-study {
 		}
 		h2,
 		p {
+			padding: 0rem 2rem;
 			color: $white;
 		}
 		.img-wrapper {
 			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
 			img {
-				// width: 100%;
+				width: 100%;
 				display: block;
 			}
 			max-height: 60rem;
@@ -247,7 +248,7 @@ aside.related-case-studies {
 					display: block;
 					margin: 0 auto;
 					text-align: center;
-					// width: 100%;
+					width: 100%;
 					padding: 10vh 1rem;
 				}
 			}
@@ -267,12 +268,11 @@ aside.related-case-studies {
 }
 
 .case-studies {
-	// width: 100%;
+	width: 100%;
 	max-width: 100%;
 	padding: 0;
-	margin: 0;
+	margin: 4rem 0 0;
 	> h2 {
-		//max-width: 1000px;
 		margin: 0 auto;
 		padding: 2rem;
 		background: $main-dark;
@@ -283,15 +283,16 @@ aside.related-case-studies {
 		margin: 0;
 		padding: 0;
 		display: block;
-		// width: 100%;
+		width: 100%;
 		li {
-			// width: 100%;
+			width: 100%;
 			list-style: none;
 			text-align: center;
 			background-size: cover;
 			background-position: center;
-			border-bottom: 4px solid $main;
+			border-bottom: 4px solid $dark-transparent;
 			a {
+				background: $light-transparent;
 				font-family: $heading-font;
 				padding: 8vh 0;
 				display: block;
@@ -314,7 +315,7 @@ aside.related-case-studies {
 					margin: 0 auto;
 				}
 				&:hover {
-					background: $main-transparent;
+					background: $dark-transparent;
 
 					text-decoration: none;
 					h2,
@@ -345,7 +346,7 @@ aside.related-case-studies {
 footer {
 	padding: 2rem;
 	background: $main-dark;
-	// width: 100%;
+	width: 100%;
 	clear: both;
 	p {
 		color: $lightgrey;
@@ -390,7 +391,7 @@ footer {
 	aside.lock {
 		#password-form {
 			input {
-				// width: 100%;
+				width: 100%;
 			}
 		}
 	}
@@ -420,7 +421,7 @@ footer {
 
 			padding: 2rem;
 			.solution-image {
-				// width: 100%;
+				width: 100%;
 			}
 		}
 		div.feature {
@@ -454,7 +455,7 @@ footer {
 		.inner {
 			flex-wrap: wrap;
 			div.related-case-study {
-				// width: 100%;
+				width: 100%;
 			}
 		}
 	}
