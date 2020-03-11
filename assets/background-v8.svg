@@ -29,7 +29,7 @@
                 <polygon id="Rectangle-Copy-13" fill="#E3ECF6" points="554 146.75 652.066797 181.383065 731.524835 271.794673 504.148402 241.324759"></polygon>
                 <polygon id="Rectangle-Copy-15" fill="#E3ECF6" points="912.025759 181.383065 1075.12741 246 1075.12741 271.794673 884.881736 232.756497"></polygon>
                 <polygon id="Rectangle-Copy-19" fill="#E3ECF6" transform="translate(1381.664662, 247.412742) scale(-1, 1) translate(-1381.664662, -247.412742) " points="1323.32932 246 1420.538 167.737368 1440 218.733878 1323.32932 327.088115"></polygon>
-                <rect id="Rectangle" fill="#FFFFFF" opacity="0.2" style="mix-blend-mode: lighten;" x="0" y="0" width="1440" height="707"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" opacity="0.4" style="mix-blend-mode: lighten;" x="0" y="0" width="1440" height="707"></rect>
             </g>
         </g>
     </g>
