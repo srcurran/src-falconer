@@ -32,11 +32,6 @@ case_study_right_title: Next
 			</div>
 
 			<div class="solution inset" data-aos="fade-up">
-				{% if !page.story.content.solution_video %}
-				<div class="solution-video">
-					this is a video
-				</div>
-				{% else %}
 				<div class="solution-image">
 					<a data-lity href="{{ page.story.content.solution_image }}"
 						><img
@@ -44,11 +39,11 @@ case_study_right_title: Next
 							alt="{{ page.story.content.solution_image }}"
 					/></a>
 				</div>
-				{% endif %}
 				<div class="solution-copy">
 					{{ page.story.content.solution | markdownify }}
 				</div>
 			</div>
+
 			{% for blok in page.story.content.feature_set %}
 			<div class="feature inset" data-aos="fade-up">
 				<div class="feature-copy">
