@@ -113,7 +113,7 @@ a:hover {
 .bodycopy a {
 	word-break: keep-all;
 	text-decoration: none;
-	border-bottom: 4px solid $main;
+	border-bottom: 2px solid $main;
 }
 .bodycopy a:hover {
 	text-decoration: none;
@@ -124,7 +124,7 @@ a[href^="http://"]:not([href*="example.com"]):after,
 a[href^="https://"]:not([href*="example.com"]):after {
 	content: " ↗";
 	font-family: arial;
-	font-size: 0.5rem;
+	font-size: 0.66rem;
 	text-decoration: none !important;
 }
 @media only screen and (max-width: 600px) {
@@ -166,6 +166,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	background: $main-dark;
+	height: 5rem;
 	.logo a {
 		font-family: $heading-font;
 		font-weight: 700;
