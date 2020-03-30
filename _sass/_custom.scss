@@ -12,7 +12,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	.wrapper {
-		padding: 15vh 1rem;
+		padding: 15vh 5rem;
 		border-bottom: 4px solid $main;
 		h1 {
 			background: $dark-transparent;
@@ -293,11 +293,10 @@ aside.related-case-studies {
 			background-position: center;
 			border-bottom: 4px solid $dark-transparent;
 			a {
-				background: $light-transparent;
 				font-family: $heading-font;
 				padding: 8vh 0;
 				display: block;
-				background: $light-transparent;
+				background: $white;
 				text-decoration: none;
 				h2 {
 					color: $main;

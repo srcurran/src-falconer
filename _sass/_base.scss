@@ -10,7 +10,7 @@ $white: #f8faff;
 $lightgrey: #d2e0f0;
 
 $main-transparent: rgba(71, 135, 198, 0.9);
-$dark-transparent: rgba(57, 101, 148, 0.9);
+$dark-transparent: rgba(57, 101, 148, 0.97);
 $light-transparent: rgba(245, 248, 252, 0.9);
 
 *,
@@ -35,14 +35,14 @@ h2,
 h3,
 h4 {
 	font-weight: 700;
-	color: $main-dark;
+	color: $main;
 	font-family: $heading-font;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
 	margin: 2.5rem 0 0.5rem;
 }
 h1 {
-	color: $main;
+	color: $main-dark;
 	font-size: 5em;
 	a,
 	a:visited {
@@ -62,9 +62,12 @@ h4 {
 	font-size: 1.5rem;
 }
 h5 {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 400;
 	margin: 0 0 -2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $main-dark;
 }
 p {
 	font-size: 1.25rem;
@@ -106,7 +109,7 @@ a:visited {
 	font-weight: 700;
 }
 a:hover {
-	color: $main-light;
+	color: $main-dark;
 	text-decoration: underline;
 }
 
@@ -117,7 +120,7 @@ a:hover {
 }
 .bodycopy a:hover {
 	text-decoration: none;
-	border-bottom: 4px solid $main-light;
+	border-bottom: 4px solid $main-dark;
 }
 
 a[href^="http://"]:not([href*="example.com"]):after,
