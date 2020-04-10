@@ -9,9 +9,9 @@ $main-light: #a6c3e2;
 $white: #f8faff;
 $lightgrey: #d2e0f0;
 
-$main-transparent: rgba(71, 135, 198, 0.9);
-$dark-transparent: rgba(57, 101, 148, 0.97);
-$light-transparent: rgba(245, 248, 252, 0.9);
+$main-transparent: rgba(71, 135, 198, 0.95);
+$dark-transparent: rgba(57, 101, 148, 0.95);
+$light-transparent: rgba(245, 248, 252, 0.95);
 
 *,
 *::before,
@@ -43,7 +43,8 @@ h4 {
 }
 h1 {
 	color: $main-dark;
-	font-size: 5em;
+	font-size: 8rem;
+	letter-spacing: -0.25rem;
 	a,
 	a:visited {
 		text-decoration: none;
@@ -52,11 +53,13 @@ h1 {
 }
 h2 {
 	margin-top: 3rem;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+	letter-spacing: -0.1rem;
 }
 h3 {
-	font-size: 1.75rem;
+	font-size: 2.25rem;
 	text-transform: uppercase;
+	letter-spacing: 0.1rem;
 }
 h4 {
 	font-size: 1.5rem;
@@ -77,7 +80,7 @@ p.xl {
 }
 @media only screen and (max-width: 600px) {
 	h1 {
-		font-size: 3rem;
+		font-size: 5rem;
 	}
 	h2 {
 		font-size: 2rem;
