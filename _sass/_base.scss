@@ -12,7 +12,7 @@ $secondary: #f15430;
 $tertiary: #4897bf;
 
 $white: #fff9f2;
-$lightgrey: #fcf4ea;
+$lightgrey: #f4ece2;
 
 $main-transparent: #17282af0;
 $primary-transparent: #eea131f0;
@@ -181,8 +181,8 @@ body {
 	height: 100%;
 }
 body {
-	display: flex;
-	flex-direction: column;
+	//display: flex;
+	//flex-direction: column;
 }
 nav {
 	width: 100vw;
@@ -200,6 +200,7 @@ nav {
 		font-size: 1.5rem;
 		color: $white;
 		text-transform: uppercase;
+		display: block;
 	}
 	.logo a:hover {
 		text-decoration: none;

@@ -120,10 +120,12 @@ main.case-study {
 	}
 
 	div.solution {
-		border-bottom: 4px solid $main;
+		// border-bottom: 4px solid $main;
 		// display: flex;
 		// justify-content: space-between;
 		// align-items: center;
+		background: $lightgrey;
+		padding-bottom: 4rem;
 		.solution-copy {
 			width: 100%;
 			padding: 1rem 2rem;
@@ -381,14 +383,16 @@ footer {
 }
 @media only screen and (max-width: 640px) {
 	nav {
-		height: 6rem;
 		display: flex;
-		padding: 0.5rem 1rem;
+		padding: 1rem;
+		.logo {
+			padding: 1.5rem 0;
+		}
 		.logo a {
 			font-size: 1.25rem;
 		}
 		li a {
-			padding: 0 !important;
+			padding: 0.5rem !important;
 			margin-right: 0 !important;
 			font-size: 1rem;
 		}

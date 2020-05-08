@@ -31,16 +31,18 @@ case_study_right_title: Next
 				</div>
 			</div>
 
-			<div class="solution inset" data-aos="fade-up">
-				<div class="solution-copy">
-					{{ page.story.content.solution | markdownify }}
-				</div>
-				<div class="solution-image">
-					<a data-lity href="{{ page.story.content.solution_image }}"
-						><img
-							src="{{ page.story.content.solution_image }}"
-							alt="{{ page.story.content.solution_image }}"
-					/></a>
+			<div class="solution" data-aos="fade-up">
+				<div class="inset">
+					<div class="solution-copy">
+						{{ page.story.content.solution | markdownify }}
+					</div>
+					<div class="solution-image">
+						<a data-lity href="{{ page.story.content.solution_image }}"
+							><img
+								src="{{ page.story.content.solution_image }}"
+								alt="{{ page.story.content.solution_image }}"
+						/></a>
+					</div>
 				</div>
 			</div>
 

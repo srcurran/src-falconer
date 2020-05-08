@@ -1,3 +1,5 @@
 nav-list:
+  - title: Home
+    url: /
   - title: About
     url: /about/
