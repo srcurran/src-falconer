@@ -326,6 +326,7 @@ aside.related-case-studies {
 }
 @media only screen and (max-width: 1040px) {
 	.case-studies {
+		padding-bottom: 2rem;
 		.intro {
 			padding: 1rem 2rem;
 		}
@@ -431,7 +432,9 @@ footer {
 				margin: 0 !important;
 			}
 		}
-
+		div.quicksheet {
+			margin-top: 2rem !important;
+		}
 		div.challenge,
 		div.my-role {
 			padding: 5rem 0rem;
@@ -439,7 +442,7 @@ footer {
 			background: $lightgrey;
 		}
 		div.solution {
-			padding: 2rem;
+			padding: 2rem 2rem 4rem;
 			.solution-image {
 				width: 100%;
 			}
