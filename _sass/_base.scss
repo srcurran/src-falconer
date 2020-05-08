@@ -3,8 +3,9 @@ $heading-font: "Krona One", sans-serif;
 $font-style: "Nunito Sans", sans-serif;
 
 $main: #17282a;
-$main-dark: #142325;
+$main-dark: #091112;
 $main-light: #2e3d3f;
+$main-ultralight: #455354;
 
 $primary: #eea131;
 $secondary: #f15430;
@@ -72,7 +73,7 @@ h4 {
 h5 {
 	font-size: 1rem;
 	font-weight: 400;
-	margin: 0 0 -2rem;
+	margin: 1rem 0 0;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: $main-dark;
@@ -91,6 +92,9 @@ p.xl {
 }
 .tertiary {
 	color: $tertiary;
+}
+.main-light {
+	color: $main-ultralight;
 }
 @media only screen and (max-width: 640px) {
 	h1 {
@@ -188,7 +192,7 @@ nav {
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: $tertiary;
+	background: $main-dark;
 	height: 5rem;
 	.logo a {
 		font-family: $heading-font;
@@ -212,14 +216,25 @@ nav {
 			display: flex;
 			justify-content: space-between;
 			li {
-				&:hover {
+				&.active {
+					outline: 2px solid red;
+				}
+				a:hover {
 					ul {
-						display: block;
+						display: block !important;
 					}
 				}
 				a {
-					padding: 1rem;
+					display: block;
+					margin: 0 1rem 0;
+					padding: 0.5rem 1rem;
 					color: $white;
+					border-radius: 0.25rem;
+
+					&:hover {
+						background: $main;
+						text-decoration: none;
+					}
 				}
 
 				ul {
@@ -227,22 +242,25 @@ nav {
 
 					box-shadow: 0 0 2px 0 $tertiary-transparent;
 					padding: 0.5rem 1rem 1.5rem;
-					margin: 0.5rem 0 0 -1rem;
+					margin: 0rem 0 0 -1rem;
 					position: absolute;
 					display: none;
 					li {
 						margin-left: 0;
 						display: block;
 						a {
+							border: 0;
+							margin: 0;
 							display: inline-block;
 							width: 100%;
 							padding: 0.5rem 1rem !important;
+							background: $white !important;
 						}
 						a.sublink {
 							color: $main;
 						}
 						a.sublink:hover {
-							color: $main;
+							color: $main-dark;
 						}
 					}
 				}
@@ -258,16 +276,13 @@ nav {
 					}
 				}
 			}
-			li:last-of-type a {
-				padding-right: 0;
-			}
 		}
 	}
 }
 
 footer {
 	padding: 2rem;
-	background: $main-light;
+	background: $main-dark;
 	width: 100%;
 	clear: both;
 	p {

@@ -233,7 +233,7 @@ aside.related-case-studies {
 		justify-content: space-between;
 		div.related-case-study {
 			width: 50%;
-			background: $main;
+			background: $primary;
 
 			border: 8px solid $white;
 			margin: 2rem;
@@ -252,15 +252,15 @@ aside.related-case-studies {
 			}
 
 			&:hover {
-				background: $main-dark;
-				border: 8px solid $main-dark;
+				background: $secondary;
+				border: 0.5rem solid $main-dark;
 			}
 		}
 		div.related-case-study.left a::before {
-			content: "⟵ ";
+			// content: "⟵ ";
 		}
 		div.related-case-study.right a::after {
-			content: " ⟶";
+			// content: " ⟶";
 		}
 	}
 }
@@ -270,11 +270,15 @@ aside.related-case-studies {
 	max-width: 100%;
 	padding: 0;
 	margin: 0;
-	> h2 {
+	background: $main-light;
+	.intro {
 		margin: 0 auto;
 		padding: 2rem 5rem;
-		color: $primary;
+		color: $primary !important;
 		text-align: center;
+		h2 {
+			color: $primary;
+		}
 	}
 	ul {
 		margin: 0;
@@ -285,22 +289,24 @@ aside.related-case-studies {
 			width: 100%;
 			list-style: none;
 			margin: 5rem 0;
-			outline: 0.25rem solid $secondary;
+			border: 0.5rem solid $main;
 			a {
 				display: flex;
 				text-decoration: none;
 
 				.case-studies-content {
-					width: 60%;
+					width: 50%;
 					height: 100%;
 					background: $secondary;
 					padding: 5rem 2rem;
+					color: $white;
 					h2 {
+						color: $white;
 						margin-top: 0;
 					}
 				}
 				.case-studies-image {
-					width: 40%;
+					width: 50%;
 					background-size: cover;
 				}
 				&:hover {
@@ -318,37 +324,21 @@ aside.related-case-studies {
 }
 @media only screen and (max-width: 1040px) {
 	.case-studies {
-		> h2 {
-			padding: 2rem;
+		.intro {
+			padding: 1rem 2rem;
 		}
 		ul {
+			padding: 0 0 1rem;
 			li {
-				a {
-					.case-studies-content {
-						padding: 2rem;
-						width: 70%;
-					}
-					.case-studies-image {
-						width: 30%;
-					}
-				}
-			}
-		}
-	}
-}
-@media only screen and (max-width: 640px) {
-	.case-studies {
-		> h2 {
-			padding: 2rem;
-		}
-		ul {
-			li {
+				margin: 1rem;
+				width: auto;
 				a {
 					.case-studies-content {
 						padding: 2rem;
 						width: 100%;
 					}
 					.case-studies-image {
+						width: 30%;
 					}
 				}
 			}
