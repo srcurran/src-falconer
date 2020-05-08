@@ -208,7 +208,6 @@ main.case-study {
 		}
 	}
 	div.my-role {
-		background: $lightgrey;
 		.inset {
 			padding: 10rem;
 
@@ -225,6 +224,7 @@ main.case-study {
 }
 
 aside.related-case-studies {
+	background: $main-light;
 	padding: 2rem;
 	h2 {
 		margin-bottom: 1rem;
