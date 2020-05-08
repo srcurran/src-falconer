@@ -1,5 +1,5 @@
 body.text-page {
-	background: url("/assets/background-v8.svg");
+	// background: url("/assets/background-v8.svg");
 	background-position-x: 0;
 	background-position-y: 0%;
 	background-size: cover;
@@ -15,7 +15,7 @@ header {
 		padding: 15vh 5rem;
 		border-bottom: 4px solid $main;
 		h1 {
-			background: $dark-transparent;
+			background: $secondary-transparent;
 			padding: 2rem;
 			display: inline-flex;
 			color: $white;
@@ -77,10 +77,11 @@ main.case-study {
 			width: 35%;
 			font-size: 0.85em;
 			margin: 5rem 0 4rem 4rem;
+			border: 4px solid $secondary;
 			h4 {
 				margin: 0;
 				padding: 1rem;
-				background: $main;
+				background: $secondary;
 				color: $white;
 			}
 			dl {
@@ -108,14 +109,10 @@ main.case-study {
 		}
 	}
 	div.challenge {
-		background: $main !important;
-		color: $white;
-		h2 {
-			color: $white;
-		}
+		background: $tertiary !important;
+		color: $main-dark;
 		.inset {
 			padding: 10rem;
-
 			@media only screen and (max-width: 600px) {
 				padding: 2rem;
 			}
@@ -123,7 +120,7 @@ main.case-study {
 	}
 
 	div.solution {
-		border-bottom: 4px solid $main-light;
+		border-bottom: 4px solid $main;
 		// display: flex;
 		// justify-content: space-between;
 		// align-items: center;
@@ -186,7 +183,7 @@ main.case-study {
 
 	div.final-design {
 		margin: 6rem 0 0;
-		background: $main;
+		background: $secondary;
 		.inset {
 			@media only screen and (max-width: 600px) {
 				padding: 2rem;
@@ -272,56 +269,86 @@ aside.related-case-studies {
 	width: 100%;
 	max-width: 100%;
 	padding: 0;
-	margin: 4rem 0 0;
+	margin: 0;
 	> h2 {
 		margin: 0 auto;
-		padding: 2rem;
-		background: $main-dark;
-		color: $white;
+		padding: 2rem 5rem;
+		color: $primary;
 		text-align: center;
 	}
 	ul {
 		margin: 0;
-		padding: 0;
+		padding: 0 5rem;
 		display: block;
 		width: 100%;
 		li {
 			width: 100%;
 			list-style: none;
-			text-align: center;
-			background-size: cover;
-			background-position: center;
-			border-bottom: 4px solid $dark-transparent;
+			margin: 5rem 0;
+			outline: 0.25rem solid $secondary;
 			a {
-				font-family: $heading-font;
-				padding: 8vh 0;
-				display: block;
-				background: $white;
+				display: flex;
 				text-decoration: none;
-				h2 {
-					color: $main;
-					text-decoration: underline;
-					font-size: 3rem;
-					letter-spacing: 0.05em;
-					padding-bottom: 0;
-					@media only screen and (max-width: 600px) {
-						font-size: 2.25rem;
+
+				.case-studies-content {
+					width: 60%;
+					height: 100%;
+					background: $secondary;
+					padding: 5rem 2rem;
+					h2 {
+						margin-top: 0;
 					}
 				}
-				p {
-					color: $main;
-					font-size: 1.75rem;
-					max-width: 75vw;
-					margin: 0 auto;
+				.case-studies-image {
+					width: 40%;
+					background-size: cover;
 				}
 				&:hover {
-					background: $dark-transparent;
-
-					text-decoration: none;
-					h2,
-					p {
+					.case-studies-content {
+						background: $main;
+					}
+					color: $white;
+					h2 {
 						color: $white;
-						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1040px) {
+	.case-studies {
+		> h2 {
+			padding: 2rem;
+		}
+		ul {
+			li {
+				a {
+					.case-studies-content {
+						padding: 2rem;
+						width: 70%;
+					}
+					.case-studies-image {
+						width: 30%;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 640px) {
+	.case-studies {
+		> h2 {
+			padding: 2rem;
+		}
+		ul {
+			li {
+				a {
+					.case-studies-content {
+						padding: 2rem;
+						width: 100%;
+					}
+					.case-studies-image {
 					}
 				}
 			}
@@ -342,10 +369,16 @@ aside.related-case-studies {
 	font-weight: 800;
 	margin: 0 0.25rem;
 }
+.working {
+	background-color: $tertiary;
+	color: #fff;
+	padding: 0.25rem 0.5rem;
+	font-weight: 800;
+	margin: 0 0.25rem;
+}
 
 footer {
 	padding: 2rem;
-	background: $main-dark;
 	width: 100%;
 	clear: both;
 	p {
@@ -356,20 +389,7 @@ footer {
 		}
 	}
 }
-
-@media only screen and (max-width: 600px) {
-	header div.wrapper {
-		padding: 15vh 0rem;
-
-		h1 {
-			font-size: 3rem;
-			justify-content: center;
-			width: 100%;
-			padding: 2rem 1rem;
-		}
-	}
-	body {
-	}
+@media only screen and (max-width: 640px) {
 	nav {
 		height: 6rem;
 		display: block;
@@ -386,6 +406,18 @@ footer {
 		}
 		li a {
 			padding: 0.5rem !important;
+		}
+	}
+}
+@media only screen and (max-width: 1040px) {
+	header div.wrapper {
+		padding: 15vh 0rem;
+
+		h1 {
+			font-size: 3rem;
+			justify-content: center;
+			width: 100%;
+			padding: 2rem 1rem;
 		}
 	}
 	aside.lock {

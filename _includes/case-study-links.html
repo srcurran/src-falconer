@@ -3,15 +3,19 @@
 	<ul>
 		{% for page in site.pages %} {% if page.url contains "/case-study/" %}
 
-		<li
-			style="background-image:url('{{ page.story.content.background_image }}')"
-		>
+		<li data-aos="fade-up">
 			<a href="{{page.url}}">
-				<div class="case-studies-content" data-aos="fade-up">
+				<div class="case-studies-content">
 					<h2>{{ page.title }}</h2>
 					<p>
 						{{ page.story.content.snippet }}
 					</p>
+				</div>
+				<div
+					class="case-studies-image"
+					style="background-image: url('{{ page.story.content.background_image }}')"
+				>
+					&nbsp;
 				</div>
 			</a>
 		</li>

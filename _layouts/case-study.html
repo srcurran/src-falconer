@@ -25,22 +25,22 @@ case_study_right_title: Next
 				</div>
 			</div>
 
-			<div class="challenge " data-aos="fade-up">
+			<div class="challenge" data-aos="fade-up">
 				<div class="inset">
 					{{ page.story.content.challenge | markdownify }}
 				</div>
 			</div>
 
 			<div class="solution inset" data-aos="fade-up">
+				<div class="solution-copy">
+					{{ page.story.content.solution | markdownify }}
+				</div>
 				<div class="solution-image">
 					<a data-lity href="{{ page.story.content.solution_image }}"
 						><img
 							src="{{ page.story.content.solution_image }}"
 							alt="{{ page.story.content.solution_image }}"
 					/></a>
-				</div>
-				<div class="solution-copy">
-					{{ page.story.content.solution | markdownify }}
 				</div>
 			</div>
 
@@ -81,7 +81,7 @@ case_study_right_title: Next
 			</div>
 		</main>
 		<aside class="related-case-studies">
-			<h2 data-aos="fade-up">Even More Case Studies</h2>
+			<h2 data-aos="fade-up">Read on</h2>
 			<div class="inner">
 				<div class="related-case-study left" data-aos="fade-up">
 					{{ page.story.content.related_case_study_left | markdownify }}
@@ -101,7 +101,7 @@ case_study_right_title: Next
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init({
-			duration: 200
+			duration: 200,
 		});
 	</script>
 </html>

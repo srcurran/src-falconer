@@ -2,16 +2,21 @@ $heading-font: "Krona One", sans-serif;
 
 $font-style: "Nunito Sans", sans-serif;
 
-$main: #4d87c6;
-$main-dark: #396594;
-$main-light: #a6c3e2;
+$main: #17282a;
+$main-dark: #142325;
+$main-light: #2e3d3f;
 
-$white: #f8faff;
-$lightgrey: #d2e0f0;
+$primary: #eea131;
+$secondary: #f15430;
+$tertiary: #4897bf;
 
-$main-transparent: rgba(71, 135, 198, 0.95);
-$dark-transparent: rgba(57, 101, 148, 0.95);
-$light-transparent: rgba(245, 248, 252, 0.95);
+$white: #fff9f2;
+$lightgrey: #fcf4ea;
+
+$main-transparent: #17282af0;
+$primary-transparent: #eea131f0;
+$secondary-transparent: #f15430f0;
+$tertiary-transparent: #4897bff0;
 
 *,
 *::before,
@@ -43,7 +48,7 @@ h4 {
 }
 h1 {
 	color: $main-dark;
-	font-size: 8rem;
+	font-size: 5rem;
 	letter-spacing: -0.25rem;
 	a,
 	a:visited {
@@ -53,7 +58,7 @@ h1 {
 }
 h2 {
 	margin-top: 3rem;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	letter-spacing: -0.1rem;
 }
 h3 {
@@ -78,7 +83,16 @@ p {
 p.xl {
 	font-size: 1.5rem;
 }
-@media only screen and (max-width: 600px) {
+.primary {
+	color: $primary;
+}
+.secondary {
+	color: $secondary;
+}
+.tertiary {
+	color: $tertiary;
+}
+@media only screen and (max-width: 640px) {
 	h1 {
 		font-size: 5rem;
 	}
@@ -112,36 +126,39 @@ a:visited {
 	font-weight: 700;
 }
 a:hover {
-	color: $main-dark;
+	color: $main-light;
 	text-decoration: underline;
 }
 
 .bodycopy a {
 	word-break: keep-all;
 	text-decoration: none;
-	border-bottom: 2px solid $main;
 }
 .bodycopy a:hover {
 	text-decoration: none;
-	border-bottom: 4px solid $main-dark;
+	border-bottom: 2px solid $main-dark;
 }
 
 a[href^="http://"]:not([href*="example.com"]):after,
-a[href^="https://"]:not([href*="example.com"]):after {
-	content: " ↗";
-	font-family: arial;
-	font-size: 0.66rem;
-	text-decoration: none !important;
+a[href^="https://"]:not([href*="example.com"]):after
+{
+	display: none;
+	// content: " ↗";
+	// font-family: arial;
+	// font-size: 0.66rem;
+	// text-decoration: none !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1040px) {
 	a[href^="http://"]:not([href*="example.com"]):after,
-	a[href^="https://"]:not([href*="example.com"]):after {
+	a[href^="https://"]:not([href*="example.com"]):after
+	{
 		display: none;
 	}
 }
 .quicksheet {
 	a[href^="http://"]:not([href*="example.com"]):after,
-	a[href^="https://"]:not([href*="example.com"]):after {
+	a[href^="https://"]:not([href*="example.com"]):after
+	{
 		display: none;
 	}
 }
@@ -171,7 +188,7 @@ nav {
 	flex-wrap: no-wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: $main-dark;
+	background: $tertiary;
 	height: 5rem;
 	.logo a {
 		font-family: $heading-font;
@@ -208,7 +225,7 @@ nav {
 				ul {
 					background: $white;
 
-					box-shadow: 0 0 2px 0 $dark-transparent;
+					box-shadow: 0 0 2px 0 $tertiary-transparent;
 					padding: 0.5rem 1rem 1.5rem;
 					margin: 0.5rem 0 0 -1rem;
 					position: absolute;
@@ -229,7 +246,7 @@ nav {
 						}
 					}
 				}
-				@media only screen and (max-width: 600px) {
+				@media only screen and (max-width: 640px) {
 					ul {
 						width: 100%;
 
@@ -250,7 +267,7 @@ nav {
 
 footer {
 	padding: 2rem;
-	background: $main-dark;
+	background: $main-light;
 	width: 100%;
 	clear: both;
 	p {
