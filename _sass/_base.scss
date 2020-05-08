@@ -7,17 +7,19 @@ $main-dark: #091112;
 $main-light: #2e3d3f;
 $main-ultralight: #455354;
 
-$primary: #eea131;
-$secondary: #f15430;
-$tertiary: #4897bf;
+// $primary: #eea131;
+$primary: #f15430;
+// $primary: #4897bf;
+// $primary: #455354;
 
-$white: #fff9f2;
-$lightgrey: #f4ece2;
+$white: #fffaf9;
+$lightgrey: #fef6f4;
 
 $main-transparent: #17282af0;
-$primary-transparent: #eea131f0;
-$secondary-transparent: #f15430f0;
-$tertiary-transparent: #4897bff0;
+// $primary-transparent: #eea131f0;
+$primary-transparent: #f15430f0;
+// $primary-transparent: #4897bff0;
+// $primary-transparent: #455354f0;
 
 *,
 *::before,
@@ -58,7 +60,7 @@ h1 {
 	}
 }
 h2 {
-	margin-top: 3rem;
+	margin: 3rem 0;
 	font-size: 3rem;
 	letter-spacing: -0.1rem;
 }
@@ -88,37 +90,42 @@ p.xl {
 	color: $primary;
 }
 .secondary {
-	color: $secondary;
+	color: $primary;
 }
 .tertiary {
-	color: $tertiary;
+	color: $primary;
 }
 .main-light {
 	color: $main-ultralight;
 }
+// @media only screen and (max-width: 640px) {
+h1 {
+	font-size: 5rem;
+}
+h2 {
+	font-size: 3rem;
+}
 @media only screen and (max-width: 640px) {
-	h1 {
-		font-size: 5rem;
-	}
 	h2 {
 		font-size: 2rem;
 	}
-	h3 {
-		font-size: 1.5rem;
-	}
-	h4 {
-		font-size: 1.25rem;
-	}
-	h5 {
-		font-size: 1rem;
-	}
-	p {
-		font-size: 1rem;
-	}
-	p.xl {
-		font-size: 1.25rem;
-	}
 }
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	font-size: 1.25rem;
+}
+h5 {
+	font-size: 1rem;
+}
+p {
+	font-size: 1.25rem;
+}
+p.xl {
+	font-size: 1.5rem;
+}
+// }
 
 nav a {
 	text-decoration: none;
@@ -241,7 +248,7 @@ nav {
 				ul {
 					background: $white;
 
-					box-shadow: 0 0 2px 0 $tertiary-transparent;
+					box-shadow: 0 0 2px 0 $primary-transparent;
 					padding: 0.5rem 1rem 1.5rem;
 					margin: 0rem 0 0 -1rem;
 					position: absolute;
