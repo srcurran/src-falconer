@@ -11,6 +11,7 @@ header {
 	text-align: center;
 	background-size: cover;
 	background-position: center;
+
 	.wrapper {
 		padding: 15vh 5rem;
 		border-bottom: 4px solid $main;
@@ -136,6 +137,7 @@ main.case-study {
 		// justify-content: space-between;
 		// align-items: center;
 		background: $lightgrey;
+		border-bottom: 1px solid $primary-light;
 		padding-bottom: 4rem;
 		.solution-copy {
 			width: 100%;
@@ -199,7 +201,7 @@ main.case-study {
 
 	div.final-design {
 		margin: 6rem 0 0;
-		background: $primary;
+		background: $main-light;
 		.inset {
 			@media only screen and (max-width: 600px) {
 				padding: 2rem;
@@ -211,7 +213,7 @@ main.case-study {
 			color: $white;
 		}
 		.img-wrapper {
-			box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+			box-shadow: 0px 0px 24px 0px $main-transparent;
 			img {
 				width: 100%;
 				display: block;
@@ -252,6 +254,7 @@ aside.related-case-studies {
 			width: 50%;
 			background: $primary;
 
+			box-shadow: 0 12px 20px -12px $main-transparent;
 			border: 0.5rem solid $main;
 			margin: 2rem;
 			p {
@@ -310,6 +313,7 @@ aside.related-case-studies {
 			list-style: none;
 			margin: 5rem 0;
 			border: 0.5rem solid $main;
+			box-shadow: 0 12px 20px -12px $main-transparent;
 			a {
 				display: flex;
 				text-decoration: none;
@@ -349,12 +353,12 @@ aside.related-case-studies {
 @media only screen and (max-width: 1040px) {
 	.case-studies {
 		.intro {
-			padding: 1rem 2rem;
+			padding: 3rem 1rem 2rem;
 		}
 		ul {
 			padding: 0 0 1rem;
 			li {
-				margin: 1rem;
+				margin: 2rem;
 				height: 200%;
 				width: auto;
 				a {
@@ -374,7 +378,8 @@ aside.related-case-studies {
 	}
 }
 
-.small {
+.small,
+.small * {
 	font-size: 0.75em;
 }
 .x-large {
@@ -462,12 +467,10 @@ footer {
 		}
 		div.challenge,
 		div.my-role {
-			padding: 5rem 0rem;
-			margin: 5rem 0 0;
-			background: $lightgrey;
 		}
 		div.solution {
-			padding: 2rem 2rem 4rem;
+			// padding: 2rem 2rem 4rem;
+
 			.solution-image {
 				width: 100%;
 			}
@@ -499,7 +502,7 @@ footer {
 		}
 	}
 	aside.related-case-studies {
-		padding: 0;
+		padding: 2rem 0;
 		.inner {
 			flex-wrap: wrap;
 			div.related-case-study {
